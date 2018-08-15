@@ -7,13 +7,18 @@
     <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
     <%= stylesheet_link_tag    "application" %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" %>
+
+
+
     <%= csrf_meta_tags %>
   </head>
 
   <body>
 
     <%= yield %>
-    <%= javascript_include_tag "application" %>
+
   </body>
 </html>

@@ -196,16 +196,19 @@
 .nav { 
   grid-area: nav; 
   border:2px solid $color-primary;
+  background-color: $color-primary;
 }
 
 .footer { 
   grid-area: footer; 
   border:2px solid $color-primary;
+  background-color: $color-primary;
 }
 
 .sidebar { 
   grid-area: sidebar; 
   border:2px solid $color-primary;
+  background-color: $color-secondary;
 }
 
 .area1 { 

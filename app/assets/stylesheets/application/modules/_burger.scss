@@ -1,0 +1,65 @@
+/*------------------------------------*\
+# HAMBURGER
+\*------------------------------------*/
+
+$sliceHeight: 0.25rem;
+$button-color: $color-primary;
+
+.nav--user__burger {
+  display: inline-block;
+  position: absolute;
+  height: 1rem;
+  right: $gutter;
+  top: 1.75rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burger {
+  display:block;
+  height: $sliceHeight;
+  width: 2rem;
+  background: $button-color;
+  position:relative;
+  transition-all: (.2s);
+
+  &:before {
+    content:'';
+    position:absolute;
+    top:-0.5rem;
+    width:2rem;
+    left: 0;
+    height:$sliceHeight;
+    background: $button-color;
+    transition: 0.2s;
+  }
+
+  &:after {
+    content:'';
+    position:absolute;
+    left: 0;
+    top:0.5rem;
+    width:2rem;
+    height:$sliceHeight;
+    background: $button-color;
+    transition: 0.2s;
+  }
+}
+
+.burger--active {
+  background:transparent;
+
+  &:before {
+    transform:rotate(45deg);
+    top:0;
+  }
+  &:after {
+    transform:rotate(-45deg);
+    top:0;
+  }
+}

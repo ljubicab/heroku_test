@@ -1,0 +1,229 @@
+/*------------------------------------*\
+# LAYOUT
+\*------------------------------------*/
+
+.layout {
+
+  &--text {
+    max-width: $text-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  &--main {
+    max-width: $width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+  }
+
+  &--full {
+    width: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    @include breakpoint ($medium) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+
+  &--padded {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+
+    @include breakpoint ($medium) {
+      padding-top: 2 * $gutter;
+      padding-bottom: 2 * $gutter;
+    }
+  }
+
+  &--padded--double {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+
+    @include breakpoint ($medium) {
+      padding-top: 4 * $gutter;
+      padding-bottom: 4 * $gutter;
+    }
+  }
+
+  &--soft-horizontal-pad {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.subsection {
+  margin-bottom: $gutter;
+}
+
+.section {
+  margin-bottom: $gutter;
+
+  @include breakpoint ($medium) {
+    margin-bottom: 2 * $gutter;
+  }
+}
+
+.section--double {
+  margin-bottom: 2 * $gutter;
+
+  @include breakpoint ($medium) {
+    margin-bottom: 4 * $gutter;
+  }
+}
+
+.section--dark {
+  background-color: $black;
+  color: $color-primary;
+}
+
+
+
+
+/*------------------------------------*\
+# GRID
+\*------------------------------------*/
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-wrap {
+  flex-wrap: no-wrap !important;
+}
+
+.grid--gutters {
+  margin-left: calc( #{$gutter} / -2 );
+  margin-right: calc( #{$gutter} / -2 );
+}
+
+.grid--gutters > .cell {
+  padding-left: calc( #{$gutter} / 2 );
+  padding-right: calc( #{$gutter} / 2 );
+}
+
+.grid--gutters--double {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+.grid--gutters--double > .cell {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+.cell {
+  box-sizing: border-box;
+}
+
+.cell--auto {
+  flex: 1;
+}
+
+@for $i from 1 through 12 {
+  .cell--#{$i} {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: calc( 100% * ( #{$i} / 12 ) )
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @include breakpoint ($value) {
+    @for $i from 1 through 12 {
+      .cell--#{$i}--#{$key} {
+        flex-shrink: 0;
+        flex-grow: 0;
+        width: calc( 100% * ( #{$i} / 12 ) )
+      }
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+# GRID UTILITIES
+\*------------------------------------*/
+
+.grid--center {
+  justify-content: center;
+}
+
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1;
+  grid-template-areas:
+  "nav"
+  "sidebar"
+  "area1"
+  "area2"
+  "area3"
+  "sidebar2"
+  "footer";
+
+  @include breakpoint($medium ){
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav" 
+    "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 area3 sidebar2 sidebar2" 
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+.nav { 
+  grid-area: nav; 
+  border:2px solid $color-primary;
+}
+
+.footer { 
+  grid-area: footer; 
+  border:2px solid $color-primary;
+}
+
+.sidebar { 
+  grid-area: sidebar; 
+  border:2px solid $color-primary;
+}
+
+.area1 { 
+  grid-area: area1; 
+  border:2px solid $color-primary;
+}
+
+.area2 { 
+  grid-area: area2; 
+  border:2px solid $color-primary;
+}
+
+.sidebar2 { 
+  grid-area: sidebar2; 
+  border:2px solid $color-primary;
+}
+
+.area3 { 
+  grid-area: area3;
+  border:2px solid $color-primary;
+}

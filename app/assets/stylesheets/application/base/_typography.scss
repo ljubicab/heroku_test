@@ -1,0 +1,141 @@
+/*------------------------------------*\
+** VARIABLES
+\*------------------------------------*/
+
+// http://www.zell-weekeat.com/responsive-typography
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+
+$base-font-family: 'Lato', sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 1.6;
+$base-font-color: $cqd-black;
+
+$heading-font-family: 'Lato', sans-serif;
+
+
+
+/*------------------------------------*\
+** HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: $light;
+}
+
+h1 {
+  @include font-size($h1-font-sizes);
+}
+
+h2 {
+  @include font-size($h2-font-sizes);
+}
+
+h3 {
+  @include font-size($h3-font-sizes);
+}
+
+h4 {
+  @include font-size($h4-font-sizes);
+}
+
+h5 {
+  @include font-size($h5-font-sizes);
+}
+
+h6 {
+  @include font-size($h6-font-sizes);
+}
+
+
+
+/*------------------------------------*\
+** LISTS
+\*------------------------------------*/
+
+ul li {
+  list-style-type: none;
+}
+
+ol li {
+  list-style-type: none;
+}
+
+
+
+/*------------------------------------*\
+** LINKS
+\*------------------------------------*/
+
+a.link {
+  outline-width: 0;
+  text-decoration: none;
+  color: $cqd-black;
+  transition: 0.2s;
+}
+
+a.link:hover, a.link:focus, a.link:active {
+  color: lighten($cqd-black, 10%);
+}
+
+
+
+/*------------------------------------*\
+** OTHER
+\*------------------------------------*/
+
+b, strong, .strong {
+  font-weight: $bold;
+}
+
+.light{
+  font-weight: $light;
+}
+
+.semibold{
+  font-weight: $semibold;
+}
+
+.regular{
+  font-weight: $regular;
+}
+
+.extrabold{
+  font-weight: $extrabold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.purple{
+  color: $cqd-purple;
+}
+
+p {
+  @include font-size($copy-font-sizes);
+  font-family: $base-font-family;
+  margin-bottom: 1.5rem;
+}
+
+pre,
+code {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+
+
+
+/*------------------------------------*\
+** TEXT MODIFIERS
+\*------------------------------------*/
+
+// TODO: Dodaj text-- klase za debljinu, velicinu, boju, itd

@@ -1,0 +1,70 @@
+.cookies__wraper {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  padding: 1rem;
+  padding-left: 6rem;
+
+  background-image: image-url('icons/cookie.png');
+  background-size: 2rem;
+  background-position: $gutter center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: rgba($black--true, 1);
+  color: $white--true;
+
+  @include breakpoint ($large) {
+    flex-wrap: nowrap;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5*$gutter;
+    padding-left: 6rem;
+  }
+}
+
+.cookies__info {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  width: 75%;
+
+  @include breakpoint ($medium) {
+    padding-bottom: 0;
+  }
+}
+
+.cookies__action {
+  width: 25%;
+}
+
+.btn--cookies {
+  color: $white;
+  border: 1px solid $color-primary;
+  background-color: transparent;
+
+  margin-right: $gutter;
+
+  &:hover, &:focus, &:active {
+    background-color: $color-primary;
+    color: $black--true;
+    border: 1px solid transparent;
+  }
+}
+
+a.link__cookies, a.link--cookies {
+  color: $white--true;
+  border-bottom: 1px solid $white--true;
+
+  &:hover, &:focus, &:active {
+    color: $white--true;
+    border-bottom: 1px solid $color-primary;
+  }
+}

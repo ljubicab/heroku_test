@@ -1,0 +1,123 @@
+.clearfix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-inblock {
+  text-align: center;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+
+
+
+/*------------------------------------*\
+# TEXT
+\*------------------------------------*/
+
+.text--small {
+  font-size: 0.8rem;
+}
+
+.text--large {
+  font-size: 1.2rem;
+}
+
+.text--double {
+  font-size: 2rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--light {
+  color: $white;
+}
+
+.text--dark {
+  color: $black;
+}
+
+.text--alert {
+  color: $color-alert;
+}
+
+.text--limiter {
+  max-width: 40rem;
+}
+
+
+
+.full--height {
+  height: 100%;
+}
+
+.full--height-vh {
+  height: 100vh;
+}
+
+.full--width {
+  width: 100%;
+}
+
+.full--width-vw {
+  width: 100vw;
+}
+
+.shade {
+  background-color: $clouds;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

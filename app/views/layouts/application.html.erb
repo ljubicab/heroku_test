@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "MeowMeow App" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
 
-    <%= javascript_include_tag "vendor/modernizr" %>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application" %>
 
 

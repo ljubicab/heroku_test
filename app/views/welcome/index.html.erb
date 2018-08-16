@@ -1,11 +1,33 @@
-<div class="row">
-   <div class="small-12 large-12 columns text-center"><h1>Welcome! </h1></div>
-  <div class="small-12 large-12 columns text-center"><h2> It's cat feeder!</h2></div>
-  <div class="small-12 large-12 columns text-center"><h3>#feedthecat </h3></div>
-  <div class="small-12 large-12 columns text-center"><%= image_tag "cat.jpg" %></div>
-</div>
+<div class="grid-container">
 
-<div class="row">
-  <div class="small-12 large-12 columns text-center"><h2>Feeding times:</div>
-  <div id="times" class="small-12 large-12 columns text-center"></div>
+	<div class="nav">MeowMeow App</div>
+
+	<div class="sidebar">
+
+
+	 </div>
+
+
+	<div class="area1">  
+		<%= image_tag "cat.jpg", class:"full--width full--height cover" %>
+	</div>
+
+	<div class="area2">
+		 <div id="columnchart_material" class="full--width full--height clearfix"></div>
+		
+	</div>
+
+	<div class="area3">
+			<h2>Feeding times:</h2>
+			<div id="times" class="small-12 large-12 columns text-center"></div>
+
+			<p>You've fed your cat <strong id="timesfed"></strong> times.</p>
+	</div>
+
+	<div class="sidebar2">
+			<div id="myPieChart" class="full--width full--height"></div>
+	</div>
+	
+
+	<div class="footer">#feedthecat</div>
 </div>

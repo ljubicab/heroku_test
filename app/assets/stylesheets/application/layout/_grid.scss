@@ -197,6 +197,7 @@
   grid-area: nav; 
   border:2px solid $color-primary;
   background-color: $color-primary;
+  padding: 0 2rem;
 }
 
 .footer { 
@@ -219,6 +220,7 @@
 .area2 { 
   grid-area: area2; 
   border:2px solid $color-primary;
+  padding: 1rem;
 }
 
 .sidebar2 { 
@@ -229,4 +231,5 @@
 .area3 { 
   grid-area: area3;
   border:2px solid $color-primary;
+  padding: 1rem;
 }

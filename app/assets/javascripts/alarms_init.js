@@ -1,4 +1,4 @@
-$(function getBooks(){
+$(function getAlarms(){
 	$.ajax ({
 		url: "https://api.mlab.com/api/1/databases/mewpurr/collections/alarms?apiKey=gJ-iCkDH7UGdMlgEuOEBB6XRQzgEtTj9",
 		type: "GET",
@@ -15,10 +15,8 @@ $(function getBooks(){
     console.log("You've fed your cat " + i + " times");
 		$('#times').html(output);
     $('#timesfed').html(i);
-
-
-
 	});
+
 
 	google.charts.load('current', {packages: ['corechart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -62,6 +60,3 @@ $(function getBooks(){
       }
 
 });
-
-
-

@@ -1,38 +1,51 @@
 $(function(){
 
-google.charts.load('current', {packages: ['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+  $.ajax ({
+    url: "https://api.mlab.com/api/1/databases/mewpurr/collections/timestamps?apiKey=gJ-iCkDH7UGdMlgEuOEBB6XRQzgEtTj9",
+    type: "GET",
+    contentType: "application/json"
+  }).done(function(data){
 
-  function drawChart() {
-    // Define the chart to be drawn.
-    var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Element');
-    data.addColumn('number', 'Percentage');
-    data.addRows([
-      ['Nitrogen', 0.78],
-      ['Oxygen', 0.21],
-      ['Other', 0.01]
-    ]);
+    var output = [];
 
-    // Instantiate and draw the chart.
-    var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-    chart.draw(data, null);
-  }
+    $.each(data, function(key, data) {
 
-  google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+      var $new_date = output.push(data.date.slice(0,10));
+      console.log(output.length);
+
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      console.log(output);
+
+      function drawChart() {
+
+      function getOccurrence(array, value) {
+        var count = 0;
+        array.forEach((v) => (v === value && count++));
+        return count;
+      }
+
+      function onlyUnique(value, index, self) { 
+          return self.indexOf(value) === index;
+      }
+
+      var unique = output.filter( onlyUnique );
+
       var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses', 'Profit'],
-        ['2014', 1000, 400, 200],
-        ['2015', 1170, 460, 250]
+        ['Day', 'Number of feedings'],
+          [unique[0], getOccurrence(output, unique[0])],
+          [unique[1], getOccurrence(output, unique[1])],
+          [unique[2], getOccurrence(output, unique[2])]
       ]);
-
+  
       var options = {
         chart: {
-          title: 'Company Performance',
-          subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          title: 'Daily number of feedings'
+        },
+        vAxis: {
+          title: 'Number of feedings'
         }
       };
 
@@ -40,28 +53,16 @@ google.charts.load('current', {packages: ['corechart']});
 
       chart.draw(data, google.charts.Bar.convertOptions(options));
     }
-});
 
-$(function(){
+    });
 
-  google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
-      // Define the chart to be drawn.
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Element');
-      data.addColumn('number', 'Percentage');
-      data.addRows([
-        ['Nitrogen', 0.78],
-        ['Oxygen', 0.21],
-        ['Other', 0.01]
-      ]);
 
-      // Instantiate and draw the chart.
-      var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-      chart.draw(data, null);
-    }
+    });
+
+
+
+
 });
 
 

@@ -35,9 +35,13 @@ $(function(){
 
       var data = google.visualization.arrayToDataTable([
         ['Day', 'Number of feedings'],
-          [unique[0], getOccurrence(output, unique[0])],
-          [unique[1], getOccurrence(output, unique[1])],
-          [unique[2], getOccurrence(output, unique[2])]
+          [unique[unique.length-7], getOccurrence(output, unique[unique.length-7])],
+          [unique[unique.length-6], getOccurrence(output, unique[unique.length-6])],
+          [unique[unique.length-5], getOccurrence(output, unique[unique.length-5])],
+          [unique[unique.length-4], getOccurrence(output, unique[unique.length-4])],
+          [unique[unique.length-3], getOccurrence(output, unique[unique.length-3])],
+          [unique[unique.length-2], getOccurrence(output, unique[unique.length-2])],
+          [unique[unique.length-1], getOccurrence(output, unique[unique.length-1])]
       ]);
   
       var options = {

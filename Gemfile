@@ -30,10 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'normalize-rails'
-gem 'foundation-rails'
-gem 'autoprefixer-rails'
+gem 'foundation-rails', '~> 6.4.3.0'
+gem 'autoprefixer-rails', '~> 8.6.0'
 
-gem 'mini_racer'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'

@@ -33,6 +33,8 @@ gem 'normalize-rails'
 gem 'foundation-rails'
 gem 'autoprefixer-rails'
 
+gem 'mini_racer'
+
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 # Use Capistrano for deployment

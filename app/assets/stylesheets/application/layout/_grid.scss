@@ -221,6 +221,12 @@
   grid-area: area2; 
   border:2px solid $color-primary;
   padding: 1rem;
+
+  height: 70vh;
+
+  @include breakpoint($medium) {
+    height: auto;
+  }
 }
 
 .sidebar2 { 

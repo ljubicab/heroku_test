@@ -50,7 +50,8 @@ $(function(){
         },
         vAxis: {
           title: 'Number of feedings'
-        }
+        },
+        legend: {position: 'none'}
       };
 
       var chart = new google.charts.Bar(document.getElementById('columnchart_material'));

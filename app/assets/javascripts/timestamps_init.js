@@ -11,7 +11,7 @@ $(function getTimestamps(){
 
  
   
-      output += '<tr>' + '<th>' +data.date.substring(0, data.date.length -17) +'</th>' + '<th>' +data.date.substring(12, data.date.length -11) +'</th>' +'</tr>';
+      output += '<tr>' + '<th>' +data.date.substring(0, data.date.length -17) +'</th>' + '<th>' +data.date.substring(11, data.date.length -11) +'</th>' +'</tr>';
 
       i++;
     });

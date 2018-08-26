@@ -28,39 +28,12 @@
 
 .table {
   width: 100%;
+  height: 55vh;
+  overflow-y: scroll;
 
-  & td, & th {
-    padding: 1rem;
+  td, th {
+    padding: 0.5rem;
     text-align: left;
+    font-family: $base-font-family;
   }
-}
-
-
-
-// CUSTOM TABLES
-
-
-
-/** stackable **/
-.stacktable { width: 100%; }
-.st-head-row { padding-top: 1em; }
-.st-head-row.st-head-row-main { font-size: 1rem; padding-top: 0; }
-.st-key {
-  width: 49%;
-  text-align: center;
-  padding-right: 1%;
-  border: 1px solid $color-secondary;
-}
-.st-val {
-  width: 49%;
-  padding-left: 1%;
-  border: 1px solid $color-secondary;
-}
-
-.stacktable.large-only { display: table; }
-.stacktable.small-only { display: none; }
-
-@media (max-width: 1024px) {
-  .stacktable.large-only { display: none; }
-  .stacktable.small-only { display: table; }
 }

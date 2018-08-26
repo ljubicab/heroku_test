@@ -7,11 +7,17 @@ html {
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $base-font-color;
+
 }
 
 body {
   box-sizing: border-box;
+  margin: 0;
   overflow-x: hidden;
+    @include breakpoint($medium) {
+	height: 100vh;
+	overflow: hidden;
+  }
 }
 
 *, *:before, *:after {

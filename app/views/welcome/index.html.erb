@@ -1,39 +1,45 @@
 <div class="grid-container">
 
-	<div class="nav"><div class="content-section-heading">
-
-          <h2 class="text--light strong full--width text--right">MeowMeowApp</h2>
-        </div>
-        </div>
+	<div class="nav">
+		<div class="content-section-heading">
+    		<h2 class="text--light strong full--width text--right title">MeowPurrApp</h2>
+    	</div>
+    </div>
 
 	<div class="sidebar">
-<h2 class="text--center">Alarms</h2>
-			<div id="times" class="small-12 large-12 columns text-center"></div>
-
-	 </div>
-
+		<h2 class="text--center">Alarms</h2>
+		<div id="times" class="small-12 large-12 columns text--center"></div>
+	</div>
 
 	<div class="area1">  
 		<%= image_tag "cat.jpg", class:"full--width full--height cover" %>
 	</div>
 
 	<div class="area2" id="statistics">
-		 <div id="columnchart_material" class="full--width full--height clearfix"></div>
-		
+		<div id="columnchart_material" class="full--width full--height clearfix"></div>
 	</div>
 
 	<div class="area3">
-			
-
-			<p>You've fed your cat <strong id="timesfed"></strong> times.</p>
-			<h2>Timestamps:</h2>
-			<div id="timestamps"></div>
+		<h2 class="text--center">Timestamps</h2>
+		<div class="table">
+			<table id="timestamps"></table>
+		</div>
+		<p>You've fed your cat <strong id="timesfed"></strong> times.</p>
 	</div>
 
 	<div class="sidebar2">
-			<div id="myPieChart" class="full--width full--height clearfix"></div>
+		<div class="full--width full--height clearfix">
+			<p class="text--center">Your feeding bottle is curently </br><strong id="sensor"></strong>.</p>
+		</div>
+	</div>
+
+	<div class="sidebar3">
+		<iframe src="https://meow-purr.netlify.com/#first_caption" scrolling="no"></iframe>
+		<p class="text--center">Check more advices <a href="https://meow-purr.netlify.com/" class="link">HERE</a></p>
 	</div>
 	
+	<div class="footer">
+		<p class="text--center text--light">Copyright &copy; MeowPurr 2018</p>
+	</div>
 
-	<div class="footer">          <h3 class="text-secondary strong">#feedthecat</h3></div>
 </div>

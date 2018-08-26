@@ -8,8 +8,11 @@ $(function getTimestamps(){
     var i = 0;
 
     $.each(data, function(key, data) {
+
+ 
   
-      output += '<h3>' +data.date+'</h3>';
+      output += '<tr>' + '<th>' +data.date.substring(0, data.date.length -17) +'</th>' + '<th>' +data.date.substring(12, data.date.length -11) +'</th>' +'</tr>';
+
       i++;
     });
 

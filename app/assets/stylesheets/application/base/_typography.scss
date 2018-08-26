@@ -72,15 +72,15 @@ ol li {
 ** LINKS
 \*------------------------------------*/
 
-a.link {
+.link {
   outline-width: 0;
   text-decoration: none;
-  color: $cqd-black;
+  color: $color-primary;
   transition: 0.2s;
 }
 
-a.link:hover, a.link:focus, a.link:active {
-  color: lighten($cqd-black, 10%);
+.link:hover, .link:focus, .link:active {
+  color: lighten($color-primary, 10%);
 }
 
 
@@ -139,3 +139,7 @@ code {
 \*------------------------------------*/
 
 // TODO: Dodaj text-- klase za debljinu, velicinu, boju, itd
+
+.title {
+  margin: 0.5rem;
+}

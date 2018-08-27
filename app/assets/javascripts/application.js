@@ -19,11 +19,6 @@
 
 $( document ).ready(function() {
 
-  // hide spinner
-  $(".spinner__container").hide();
-  $(".grid-container").show();
-
-
   // show spinner on AJAX start
   $(document).ajaxStart(function(){
     $(".spinner__container").show();

@@ -27,7 +27,7 @@ $( document ).ready(function() {
   // show spinner on AJAX start
   $(document).ajaxStart(function(){
     $(".spinner__container").show();
-    $(".grid-container")
+    $(".grid-container").hide();
   });
 
   // hide spinner on AJAX stop

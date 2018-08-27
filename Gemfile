@@ -36,6 +36,7 @@ gem 'autoprefixer-rails', '~> 8.6.0'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'jquery-turbolinks'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

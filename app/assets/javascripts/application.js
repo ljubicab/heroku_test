@@ -17,3 +17,23 @@
 //= require jquery_ujs
 //= require jquery-ui
 
+$( document ).ready(function() {
+
+  // hide spinner
+  $(".spinner__container").hide();
+  $(".grid-container").show();
+
+
+  // show spinner on AJAX start
+  $(document).ajaxStart(function(){
+    $(".spinner__container").show();
+    $(".grid-container")
+  });
+
+  // hide spinner on AJAX stop
+  $(document).ajaxStop(function(){
+    $(".spinner__container").hide();
+    $(".grid-container").show();
+  });
+
+});

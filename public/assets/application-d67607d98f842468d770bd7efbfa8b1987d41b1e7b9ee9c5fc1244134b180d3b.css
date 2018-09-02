@@ -1,0 +1,1387 @@
+/*
+
+
+
+
+*/
+@charset "UTF-8";
+/*------------------------------------*\
+# CONFIG
+\*------------------------------------*/
+/*------------------------------------*\
+** COLORS
+\*------------------------------------*/
+/*------------------------------------*\
+** BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+# GRID
+\*------------------------------------*/
+/*------------------------------------*\
+** BUTTONS
+\*------------------------------------*/
+/*------------------------------------*\
+** INPUTS
+\*------------------------------------*/
+/*------------------------------------*\
+** FONT WEIGHTS
+\*------------------------------------*/
+/*------------------------------------*\
+** FONT CONFIG
+\*------------------------------------*/
+/*------------------------------------*\
+** FONT SIZES
+\*------------------------------------*/
+/*------------------------------------*\
+# Transitions
+\*------------------------------------*/
+/*------------------------------------*\
+# Paddings
+\*------------------------------------*/
+/*------------------------------------*\
+# Margins
+\*------------------------------------*/
+/*------------------------------------*\
+** SIZES
+\*------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.clearfix {
+  overflow: hidden;
+}
+
+/* line 5, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.clear {
+  clear: both;
+}
+
+/* line 9, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.absolute {
+  position: absolute;
+}
+
+/* line 13, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.relative {
+  position: relative;
+}
+
+/* line 17, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.right {
+  float: right;
+}
+
+/* line 21, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.left {
+  float: left;
+}
+
+/* line 25, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 29, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 34, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.center-inblock {
+  text-align: center;
+}
+
+/* line 38, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.block {
+  display: block;
+}
+
+/* line 42, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 46, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 56, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* line 60, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--right {
+  text-align: right;
+}
+
+/*------------------------------------*\
+# TEXT
+\*------------------------------------*/
+/* line 71, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--small {
+  font-size: 0.8rem;
+}
+
+/* line 75, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--large {
+  font-size: 1.2rem;
+}
+
+/* line 79, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--double {
+  font-size: 2rem;
+}
+
+/* line 83, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--center {
+  text-align: center;
+}
+
+/* line 87, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--light {
+  color: #F9F9F9;
+}
+
+/* line 91, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--dark {
+  color: #1A1A1A;
+}
+
+/* line 95, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--alert {
+  color: #f44336;
+}
+
+/* line 99, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.text--limiter {
+  max-width: 40rem;
+}
+
+/* line 105, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.full--height {
+  height: 100%;
+}
+
+/* line 109, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.full--height-vh {
+  height: 100vh;
+}
+
+/* line 113, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.full--width {
+  width: 100%;
+}
+
+/* line 117, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.full--width-vw {
+  width: 100vw;
+}
+
+/* line 121, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.shade {
+  background-color: #ecf0f1;
+}
+
+/* line 125, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/config/_utilities.scss */
+.no-scroll {
+  overflow: hidden;
+}
+
+/*------------------------------------*\
+** RESPONSIVE FONT SIZES
+\*------------------------------------*/
+/*------------------------------------*\
+** UTILIY FUNCTION FOR FONT-SIZE MIXIN
+\*------------------------------------*/
+/*------------------------------------*\
+** BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+** VERTICAL CENTERING
+\*------------------------------------*/
+/*------------------------------------*\
+** CARD DEPTH
+\*------------------------------------*/
+/*------------------------------------*\
+** UTILITY FUNCTION FOR CARD DEPTH MIXIN
+\*------------------------------------*/
+/*------------------------------------*\
+** UTILITY FUNCTION FOR CARD DEPTH MIXIN
+\*------------------------------------*/
+/*------------------------------------*\
+# BASE
+\*------------------------------------*/
+/*------------------------------------*\
+** VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+** HEADINGS
+\*------------------------------------*/
+/* line 23, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+/* line 31, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 640px) {
+  /* line 31, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 31, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h1 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 31, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 31, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1.2;
+  }
+}
+
+/* line 35, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h2 {
+  font-size: 1.875rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 640px) {
+  /* line 35, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 35, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 35, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 35, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+/* line 39, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 640px) {
+  /* line 39, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 39, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 39, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 39, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h3 {
+    font-size: 1.375rem;
+    line-height: 1.2;
+  }
+}
+
+/* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h4 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 640px) {
+  /* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h4 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+/* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h5 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 640px) {
+  /* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h5 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h5 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h5 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h5 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+/* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+h6 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 640px) {
+  /* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+/*------------------------------------*\
+** LISTS
+\*------------------------------------*/
+/* line 61, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 65, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+ol li {
+  list-style-type: none;
+}
+
+/*------------------------------------*\
+** LINKS
+\*------------------------------------*/
+/* line 75, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.link {
+  outline-width: 0;
+  text-decoration: none;
+  color: #1D809F;
+  transition: 0.2s;
+}
+
+/* line 82, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.link:hover, .link:focus, .link:active {
+  color: #25a3ca;
+}
+
+/*------------------------------------*\
+** OTHER
+\*------------------------------------*/
+/* line 92, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+b, strong, .strong {
+  font-weight: 700;
+}
+
+/* line 96, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.light {
+  font-weight: 300;
+}
+
+/* line 100, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.semibold {
+  font-weight: 600;
+}
+
+/* line 104, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.regular {
+  font-weight: 400;
+}
+
+/* line 108, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.extrabold {
+  font-weight: 900;
+}
+
+/* line 112, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 116, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 640px) {
+  /* line 116, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 116, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 116, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* line 116, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* line 122, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+pre,
+code {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/*------------------------------------*\
+** TEXT MODIFIERS
+\*------------------------------------*/
+/* line 139, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_typography.scss */
+.title {
+  margin: 0.5rem;
+}
+
+/*------------------------------------*\
+** GLOBAL
+\*------------------------------------*/
+/* line 5, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_global.scss */
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1A1A1A;
+}
+
+/* line 13, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_global.scss */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 640px) {
+  /* line 13, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_global.scss */
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/* line 23, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/base/_global.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*------------------------------------*\
+# MODULES
+\*------------------------------------*/
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_figures.scss */
+iframe {
+  height: 200px;
+  width: 100%;
+  border: none;
+  margin: auto;
+}
+
+/* line 8, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_figures.scss */
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #1D809F;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/* line 29, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_figures.scss */
+.spinner__container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* line 36, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_figures.scss */
+html.turbolinks-progress-bar::before {
+  background-color: red !important;
+  height: 5px !important;
+}
+
+/* line 3, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_tables.scss */
+.clear-user-agent-styles,
+.clear-user-agent-styles thead,
+.clear-user-agent-styles tbody,
+.clear-user-agent-styles tfoot,
+.clear-user-agent-styles tr,
+.clear-user-agent-styles th,
+.clear-user-agent-styles td {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  vertical-align: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+
+/* line 29, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_tables.scss */
+.table {
+  width: 100%;
+  height: 55vh;
+  overflow-y: scroll;
+}
+/* line 34, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/modules/_tables.scss */
+.table td, .table th {
+  padding: 0.5rem;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+/*------------------------------------*\
+# LAYOUT
+\*------------------------------------*/
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.grid--center {
+  justify-content: center;
+}
+
+/* line 5, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nav" "sidebar" "area1" "area2" "area3" "sidebar2" "sidebar3" "footer";
+}
+@media only screen and (min-width: 640px) {
+  /* line 5, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+  .grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav"  "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 sidebar2 sidebar2 sidebar2"  "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 sidebar2 sidebar2 sidebar2"  "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 sidebar2 sidebar2 sidebar2"  "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "sidebar sidebar area1 area1 area1 area1 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "sidebar sidebar area2 area2 area2 area2 area3 area3 area3 sidebar3 sidebar3 sidebar3"  "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+}
+
+/* line 41, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.nav {
+  grid-area: nav;
+  border: 2px solid #1D809F;
+  background-color: #1D809F;
+  padding: 0 2rem;
+}
+
+/* line 48, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.footer {
+  grid-area: footer;
+  border: 2px solid #1D809F;
+  background-color: #1D809F;
+}
+
+/* line 54, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.sidebar {
+  grid-area: sidebar;
+  border: 2px solid #1D809F;
+  background-color: #ecb807;
+  padding: 1rem;
+}
+
+/* line 61, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.area1 {
+  grid-area: area1;
+  border: 2px solid #1D809F;
+  padding: 1rem;
+}
+
+/* line 67, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.area2 {
+  grid-area: area2;
+  border: 2px solid #1D809F;
+  padding: 1rem;
+  height: 70vh;
+}
+@media only screen and (min-width: 640px) {
+  /* line 67, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+  .area2 {
+    height: auto;
+  }
+}
+
+/* line 79, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.sidebar2 {
+  grid-area: sidebar2;
+  border: 2px solid #1D809F;
+  padding: 1rem;
+}
+/* line 84, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.sidebar2 p {
+  margin: auto;
+  height: 100%;
+}
+/* line 88, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.sidebar2 p strong {
+  font-size: 1.5rem;
+}
+
+/* line 94, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.sidebar3 {
+  grid-area: sidebar3;
+  border: 2px solid #1D809F;
+  padding: 1rem;
+}
+
+/* line 101, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_grid.scss */
+.area3 {
+  grid-area: area3;
+  border: 2px solid #1D809F;
+  padding: 1rem;
+}
+
+/*------------------------------------*\
+** FOOTER
+\*------------------------------------*/
+/* line 4, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_footer.scss */
+.footer {
+  padding: 0 2rem;
+}
+
+/**
+ * Print Stylesheet fuer Deinewebsite.de
+* @version         1.0
+* @lastmodified    16.06.2016
+*/
+@media print {
+  /* Inhaltsbreite setzen, Floats und Margins aufheben */
+  /* Achtung: Die Klassen und IDs variieren von Theme zu Theme. Hier also eigene Klassen setzen */
+  /* line 11, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  #content, #page {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  /** Seitenränder einstellen */
+  @page {
+    margin: 2cm;
+  }
+  /* Font auf 16px/13pt setzen, Background auf Weiß und Schrift auf Schwarz setzen.*/
+  /* Das spart Tinte */
+  /* line 22, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  body {
+    font: 13pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+    background: #fff !important;
+    color: #000;
+  }
+
+  /* line 29, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  h1 {
+    font-size: 24pt;
+  }
+
+  /* line 33, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  h2, h3, h4 {
+    font-size: 14pt;
+    margin-top: 25px;
+  }
+
+  /* Alle Seitenumbrüche definieren */
+  /* line 39, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  a {
+    page-break-inside: avoid;
+  }
+
+  /* line 42, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  blockquote {
+    page-break-inside: avoid;
+  }
+
+  /* line 45, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  img {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  /* line 49, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  table, pre {
+    page-break-inside: avoid;
+  }
+
+  /* line 50, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  ul, ol, dl {
+    page-break-before: avoid;
+  }
+
+  /* Linkfarbe und Linkverhalten darstellen */
+  /* line 53, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  a:link, a:visited, a {
+    background: transparent;
+    color: #520;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  /* line 61, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  a {
+    page-break-inside: avoid;
+  }
+
+  /* line 65, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  a[href^=http]:after {
+    content: " <" attr(href) "> ";
+  }
+
+  /* line 69, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  a:after > img {
+    content: "";
+  }
+
+  /* line 73, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  article a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 77, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  a:not(:local-link):after {
+    content: " <" attr(href) "> ";
+  }
+
+  /**
+   * Eingebundene Videos verschwinden lassen und den Whitespace der iframes auf null reduzieren.
+   */
+  /* line 84, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  .entry iframe, ins {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    line-height: 0pt !important;
+    white-space: nowrap;
+  }
+
+  /* line 92, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  .embed-youtube, .embed-responsive {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* Unnötige Elemente ausblenden für den Druck */
+  /* line 100, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  #header-widgets, nav, aside.mashsb-container,
+  .sidebar, .mashshare-top, .mashshare-bottom,
+  .content-ads, .make-comment, .author-bio,
+  .heading, .related-posts, #decomments-form-add-comment,
+  #breadcrumbs, #footer, .post-byline, .meta-single,
+  .site-title img, .post-tags, .readability {
+    display: none;
+  }
+
+  /* Benutzerdefinierte Nachrichten vor und nach dem Inhalt einfügen */
+  /* line 111, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  .entry:after {
+    content: "\ Alle Rechte vorbehalten. (c) 2014 - 2016 TechBrain - techbrain.de";
+    color: #999 !important;
+    font-size: 1em;
+    padding-top: 30px;
+  }
+
+  /* line 117, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  #header:before {
+    content: "\ Vielen herzlichen Dank für das Ausdrucken unseres Artikels. Wir hoffen, dass auch andere Artikel von uns Ihr Interesse wecken können.";
+    color: #777 !important;
+    font-size: 1em;
+    padding-top: 30px;
+    text-align: center !important;
+  }
+
+  /* Wichtige Elemente definieren */
+  /* line 126, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  p, address, li, dt, dd, blockquote {
+    font-size: 100%;
+  }
+
+  /* Zeichensatz fuer Code Beispiele */
+  /* line 131, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  code, pre {
+    font-family: "Courier New", Courier, mono;
+  }
+
+  /* line 133, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  ul, ol {
+    list-style: square;
+    margin-left: 18pt;
+    margin-bottom: 20pt;
+  }
+
+  /* line 138, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/application/layout/_print.scss */
+  li {
+    line-height: 1.6em;
+  }
+}
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 7, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+body {
+  font-family: 'Source Sans Pro';
+}
+
+/* line 12, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+/* line 17, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+/* line 23, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.content-section-heading h2 {
+  font-size: 2rem;
+}
+/* line 26, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* line 33, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* line 42, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Map */
+/* line 48, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.map {
+  height: 30rem;
+}
+
+@media (max-width: 992px) {
+  /* line 53, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+  .map {
+    height: 75%;
+  }
+}
+/* line 58, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.map iframe {
+  pointer-events: none;
+}
+
+/* line 63, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+/* line 79, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+/* line 83, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.scroll-to-top:hover {
+  background: #343a40;
+}
+/* line 86, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_global.scss */
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_masthead.scss */
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 13, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_masthead.scss */
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  /* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_masthead.scss */
+  .masthead {
+    height: 100vh;
+  }
+  /* line 20, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_masthead.scss */
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
+}
+
+/* Side Menu */
+/* line 3, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
+  background: #1D809F;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* line 19, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 31, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+/* line 38, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 44, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+/* line 49, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+/* line 59, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+/* line 63, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+/* line 68, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 78, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+/* line 94, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+/* line 98, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_sidebar.scss */
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_services.scss */
+.service-icon {
+  background-color: #fff;
+  color: #1D809F;
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  line-height: 7.5rem;
+  font-size: 2.25rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 2, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_callout.scss */
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 8, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_callout.scss */
+.callout h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: block;
+  max-width: 30rem;
+}
+
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+/* line 7, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 16, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+/* line 19, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+/* line 23, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  /* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  /* line 32, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  /* line 36, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  /* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  /* line 49, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  /* line 53, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_portfolio.scss */
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_footer.scss */
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* line 4, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_footer.scss */
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 13, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_footer.scss */
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
+}
+
+/* line 1, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+a {
+  color: #1D809F;
+}
+/* line 3, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+a:hover, a:focus, a:active {
+  color: #155d74;
+}
+
+/* line 10, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.btn-primary {
+  background-color: #1D809F !important;
+  border-color: #1D809F !important;
+  color: #fff !important;
+}
+/* line 14, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
+}
+
+/* line 22, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.btn-secondary {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
+}
+/* line 26, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+/* line 34, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.btn-dark {
+  color: #fff !important;
+}
+
+/* line 38, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+/* line 43, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.bg-primary {
+  background-color: #1D809F !important;
+}
+
+/* line 47, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.text-primary {
+  color: #1D809F !important;
+}
+
+/* line 51, /mnt/e/bamboo/heroku_test/app/assets/stylesheets/stylish/_bootstrap-overrides.scss */
+.text-secondary {
+  color: #ecb807 !important;
+}
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */

@@ -71,3 +71,5 @@ $(function(){
 });
 
 
+//https://google-developers.appspot.com/chart/interactive/docs/gallery/columnchart
+

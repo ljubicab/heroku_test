@@ -21,3 +21,5 @@ $(function getTimestamps(){
 
   });
 });
+
+//https://stackoverflow.com/questions/11112418/how-to-output-reverse-order-ajax-file-div

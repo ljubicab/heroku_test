@@ -17,3 +17,6 @@ $(function getAlarms(){
 	});
 
 });
+
+//https://docs.mlab.com/data-api/
+//http://api.jquery.com/jQuery.ajax/

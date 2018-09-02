@@ -69,3 +69,5 @@ group :production do
   gem 'pg'         #gem to use in production environment
   gem 'rails_12factor'
 end
+
+#https://stackoverflow.com/questions/13083399/heroku-deployment-failed-because-of-sqlite3-gem-error
